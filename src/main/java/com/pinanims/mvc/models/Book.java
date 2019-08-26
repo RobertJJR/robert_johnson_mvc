@@ -47,6 +47,14 @@ public class Book {
         this.numberOfPages = numberOfPages;
     }
     
+    public Book(Long id, String title, String desc, String language, Integer numberOfPages) {
+		this.id = id;
+		this.title = title;
+		this.description = desc;
+		this.language = language;
+		this.numberOfPages = numberOfPages;
+	}
+    
 	public Long getId() {
 		return id;
 	}
@@ -89,7 +97,6 @@ public class Book {
 	public Integer getNumberOfPages() {
 		return numberOfPages;
 	}
-	//supboys
 
 
 	public void setNumberOfPages(Integer numberOfPages) {
@@ -115,7 +122,10 @@ public class Book {
 	public void setUpdatedAt(Calendar updatedAt) {
 		this.updatedAt = updatedAt;
 	}
+	
 
+
+	
 
 	@PrePersist
     protected void onCreate(){

@@ -11,7 +11,7 @@ import com.pinanims.mvc.models.Book;
 public interface BookRepositories extends CrudRepository<Book, Long> {
 	List<Book> findAll(); //This will return all of the books.
 	List<Book> findByDescriptionContaining(String search); //Find a book by their description.
-//	Long countByTitleContaining(String search);
-//	Long deleteByTitleStartingWith(String search);
+	Long countByTitleContaining(String search);
+	Long deleteByTitleStartingWith(String search);
 }
  
